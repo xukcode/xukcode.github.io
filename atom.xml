@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-01T13:16:43.848Z</updated>
+  <updated>2020-03-02T16:00:20.179Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/03/01/hello-world/"/>
-    <id>http://yoursite.com/2020/03/01/hello-world/</id>
+    <title>About me</title>
+    <link href="http://yoursite.com/2020/03/01/about/"/>
+    <id>http://yoursite.com/2020/03/01/about/</id>
     <published>2020-03-01T13:16:43.848Z</published>
-    <updated>2020-03-01T13:16:43.848Z</updated>
+    <updated>2020-03-02T16:00:20.179Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,10 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;p&gt;A student, study in Wuhan, China.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;此blog用于学习记录&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_46452096&quot; target=&quot;_blank&quot;
         
       
     
