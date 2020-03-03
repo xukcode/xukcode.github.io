@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-02T16:00:20.179Z</updated>
+  <updated>2020-03-03T19:08:35.860Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/03/01/about/"/>
     <id>http://yoursite.com/2020/03/01/about/</id>
     <published>2020-03-01T13:16:43.848Z</published>
-    <updated>2020-03-02T16:00:20.179Z</updated>
+    <updated>2020-03-03T19:08:35.860Z</updated>
     
     <summary type="html">
     
@@ -31,8 +31,7 @@
         
           &lt;p&gt;A student, study in Wuhan, China.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;此blog用于学习记录&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_46452096&quot; target=&quot;_blank&quot;
+&lt;p&gt;此blog用于学习记录&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/qq_46452096&quot; target=&quot;_blank&quot;
         
       
     
