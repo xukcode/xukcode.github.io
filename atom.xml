@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pxzwuk.coding-pages.com/"/>
-  <updated>2020-03-07T19:48:10.432Z</updated>
+  <updated>2020-03-07T19:58:43.134Z</updated>
   <id>http://pxzwuk.coding-pages.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>GitHub + HHexo搭建个人博客</title>
-    <link href="http://pxzwuk.coding-pages.com/2020/03/08/GitHub-HHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://pxzwuk.coding-pages.com/2020/03/08/GitHub-HHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <title>GitHub + Hexo搭建个人博客</title>
+    <link href="http://pxzwuk.coding-pages.com/2020/03/08/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://pxzwuk.coding-pages.com/2020/03/08/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-03-07T16:13:54.000Z</published>
-    <updated>2020-03-07T19:48:10.432Z</updated>
+    <updated>2020-03-07T19:58:43.134Z</updated>
     
     <summary type="html">
     
@@ -30,7 +30,7 @@
         
         
           &lt;p&gt;*以下环境为：Windows 10 64bits操作系统&lt;/p&gt;
-&lt;p&gt;###前期准备&lt;br&gt;####注册GitHub账号&lt;br&gt;Github 官网：&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;
+&lt;h3 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot; title=&quot;前期准备&quot;&gt;&lt;/a&gt;前期准备&lt;/h3&gt;&lt;h4 id=&quot;注册GitHub账号&quot;&gt;&lt;a
         
       
     
@@ -41,29 +41,6 @@
     
     
       <category term="Hexo" scheme="http://pxzwuk.coding-pages.com/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>About me</title>
-    <link href="http://pxzwuk.coding-pages.com/2020/03/01/about/"/>
-    <id>http://pxzwuk.coding-pages.com/2020/03/01/about/</id>
-    <published>2020-03-01T13:16:43.848Z</published>
-    <updated>2020-03-03T19:22:53.049Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;A student, study in Wuhan,
-        
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
