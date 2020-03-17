@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pxzwuk.coding-pages.com/"/>
-  <updated>2020-03-07T20:50:41.752Z</updated>
+  <updated>2020-03-17T14:45:12.993Z</updated>
   <id>http://pxzwuk.coding-pages.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub + Hexo搭建个人博客之主题美化</title>
+    <link href="http://pxzwuk.coding-pages.com/2020/03/17/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
+    <id>http://pxzwuk.coding-pages.com/2020/03/17/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</id>
+    <published>2020-03-17T13:20:51.000Z</published>
+    <updated>2020-03-17T14:45:12.993Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;上一篇已经介绍了如何利用GitHub +
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Web前端" scheme="http://pxzwuk.coding-pages.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://pxzwuk.coding-pages.com/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub + Hexo搭建个人博客</title>
