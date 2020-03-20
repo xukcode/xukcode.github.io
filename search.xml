@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>GitHub + Hexo搭建个人博客之速度优化</title>
+    <url>/2020/03/20/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web前端</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+        <tag>Coding</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GitHub + Hexo搭建个人博客之写博客</title>
     <url>/2020/03/20/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E5%86%99%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>前面已经介绍了博客的搭建以及主题美化，下面将介绍如何新建、编辑以及发布博客。</p>
-<a id="more"></a>
 <hr>
 <h4 id="新建博客"><a href="#新建博客" class="headerlink" title="新建博客"></a>新建博客</h4><p>右键点击之前新建的文件夹（blog）选择 <strong>Git Bash Here</strong> ，输入：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo n &#39;你新建的博客名（标题）&#39;</span><br></pre></td></tr></table></figure>
@@ -30,13 +42,13 @@
       <tags>
         <tag>Hexo</tag>
         <tag>Markdown</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
     <title>GitHub + Hexo搭建个人博客之主题美化</title>
     <url>/2020/03/17/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<p>上一篇已经介绍了如何利用GitHub + Hexo搭建个人博客，如果不太喜欢博客默认的主题，我们可以更换自己喜欢的主题。Hexo提供了许多主题可供选择，这里选择主题<strong>A-Ayer</strong>作为示例，这也是此博客使用的主题。更换主题的具体步骤如下：<br>主题网站：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>下载地址：<a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank" rel="noopener">https://github.com/Shen-Yu/hexo-theme-ayer</a><br>主题预览：<a href="https://shen-yu.gitee.io/" target="_blank" rel="noopener">https://shen-yu.gitee.io/</a></p>
-<a id="more"></a>
 <hr>
 <h4 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h4><p>在命令行里输入：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;注意下载地址后面的themes&#x2F;ayer不要忘写了，这是主题的存放目录，后面还需要用到</span><br><span class="line">git clone 所选主题的下载地址 themes&#x2F;ayer    </span><br><span class="line">&#x2F;&#x2F;这里是：</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;Shen-Yu&#x2F;hexo-theme-ayer.git themes&#x2F;ayer</span><br></pre></td></tr></table></figure>
@@ -59,6 +71,7 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -66,7 +79,6 @@
     <url>/2020/03/08/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>下面介绍如何利用GitHub + Hexo来搭建个人博客：</p>
 <p>*以下环境为：Windows 10 64bits操作系统</p>
-<a id="more"></a>
 <hr>
 <h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><h4 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h4><p>Github 官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a><br>注册流程比较简单，这里就不再赘述了</p>
 <h4 id="安装git和node-js"><a href="#安装git和node-js" class="headerlink" title="安装git和node.js"></a>安装git和node.js</h4><p>git 官网下载地址：<a href="https://git-scm.com/download/" target="_blank" rel="noopener">https://git-scm.com/download/</a><br>git 安装可参考：<a href="https://www.jianshu.com/p/bebba0d8038e" target="_blank" rel="noopener">Git安装教程(详细)</a></p>
@@ -112,6 +124,7 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
 </search>
