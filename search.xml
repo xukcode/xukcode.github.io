@@ -36,7 +36,35 @@
   <entry>
     <title>GitHub + Hexo搭建个人博客之速度优化</title>
     <url>/2020/03/20/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>前面已经介绍了如何搭建博客、美化主题以及编写博客，但是发现博客加载速度比较慢，下面介绍一种让网站速度更快的方法。</p>
+<p>原文链接：<a href="https://blog.csdn.net/wkzd2016/article/details/70213330" target="_blank" rel="noopener">https://blog.csdn.net/wkzd2016/article/details/70213330</a></p>
+<hr>
+<p>上次用hexo和github上搭建博客后，用了几天发现博客搭建在github上有一定的局限：</p>
+<ol>
+<li>github服务器在国外，可能访问量太大，国内访问速度有些慢;</li>
+<li>github屏蔽百度爬取，不利于seo;<br>所以，打算在<a href="https://coding.net/" target="_blank" rel="noopener">coding</a>上也搭建同样的hexo，然后通过解析让国内用户访问coding上的博客，国外用户访问github上的博客（貌似没什么国外的用户会看 ❥(^_-)）。</li>
+</ol>
+<h4 id="什么是coding？"><a href="#什么是coding？" class="headerlink" title="什么是coding？"></a>什么是coding？</h4><p>简单的说coding就是类似于github的开源代码仓库，几乎是完全仿照github做的；虽然现在代码量并不多，但是部分地方还是比github方便一些的：</p>
+<ol>
+<li>中文界面，对我们来用起来更加方便；</li>
+<li>可以免费创建私有仓库；</li>
+<li>虽然服务器也在国外，但是访问速度比github要快不少</li>
+</ol>
+<h4 id="注册coding并创建项目"><a href="#注册coding并创建项目" class="headerlink" title="注册coding并创建项目"></a>注册coding并创建项目</h4><p>这一部分很简单，不多说。需要注意的是创建项目的时候项目名称跟我们在github上创建时候类似，项目名一定要是：用户名 + coding.me<br>这样写的原因是此类pages服务中大都可以通过 {user_name}.域名 的项目名来访问此主页，(有兴趣请看coding的文档用户 Pages 与项目 Pages )<br><img src="https://img-blog.csdn.net/20170417144930611?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2t6ZDIwMTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+<h4 id="开启pages服务"><a href="#开启pages服务" class="headerlink" title="开启pages服务"></a>开启pages服务</h4><p>进入刚创建好的项目，点pages服务，选择来源处选择master分支，<br><img src="https://img-blog.csdn.net/20170417152117134?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2t6ZDIwMTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+<p>点击保存后，提示coding已运行在jiaosl.coding.me，说明开启成功，如下图:<br><img src="https://img-blog.csdn.net/20170417152433839?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2t6ZDIwMTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+<h4 id="配置SSH-key"><a href="#配置SSH-key" class="headerlink" title="配置SSH key"></a>配置SSH key</h4><p>此部分跟github上配置SSH Key完全相同，进入项目，设置，部署公钥，将你电脑上的公钥粘贴上就行。不懂的看上一篇文章。</p>
+<h4 id="hexo中添加coding仓库"><a href="#hexo中添加coding仓库" class="headerlink" title="hexo中添加coding仓库"></a>hexo中添加coding仓库</h4><p>打开本地的hexo项目根目录下的_config.yml 配置文件，找到deploy，将coding中的项目地址填入进去。<br>我们之前的repository是这样的<br><img src="https://img-blog.csdn.net/20170417150844137?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2t6ZDIwMTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+<p>现在要同时发布到hithub和coding上，所以repository的值，就要改成键值对的形式列出来。如下图：<br><img src="https://img-blog.csdn.net/20170417150610087?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2t6ZDIwMTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>要注意：.yml文件格式非常严格，冒号后面必须要有空格。</p>
+<h4 id="部署hexo到coding和github上"><a href="#部署hexo到coding和github上" class="headerlink" title="部署hexo到coding和github上"></a>部署hexo到coding和github上</h4><p>在git bash中执行命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>现在我们每次执行部署命令，代码会同时提交到github和coding上。现在打开coding已经可以看到我们部署的hexo项目了,然后访问我们刚才开启的pages服务的域名jiaosl.coding.me,就可以看到我们的博客已经可以在coding上访问了。<br>后面的内容依然是为需要使用自己的域名访问博客的用户写的，如果不需要自己的域名请略过。</p>
+<h4 id="解析域名到coding"><a href="#解析域名到coding" class="headerlink" title="解析域名到coding"></a>解析域名到coding</h4><h5 id="将github的解析改成海外"><a href="#将github的解析改成海外" class="headerlink" title="将github的解析改成海外"></a>将github的解析改成海外</h5><p>进入我的阿里云控制台，上次添加的解析是这样的<br><img src="https://img-blog.csdn.net/20170414152851840?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2t6ZDIwMTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>现在我们需要修改这个解析，点击 修改，然后将解析线路改成海外，然后保存，这样国外的用户访问你的博客的话会跳转到你的github的页面。</p>
+<h5 id="添加CNAME解析到coding"><a href="#添加CNAME解析到coding" class="headerlink" title="添加CNAME解析到coding"></a>添加CNAME解析到coding</h5><p>然后，点添加解析，我们再添加一条到coding的解析，记录类型选CNAME，记录值填你刚才pages服务给的地址，如：jiaosl.coding.me ，点击保存，如下图红色框框；<br><img src="https://img-blog.csdn.net/20170417153831882?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2t6ZDIwMTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>这样算是解析到了coding，接下来我们需要在coding的pages服务里，绑定我们的域名，解析才会有效果，进入项目的pages服务中，找到在绑定域名那里，填入你的域名，点击绑定，出现下图这样，就说明绑定成功。<br><img src="https://img-blog.csdn.net/20170417154113550?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2t6ZDIwMTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>现在访问你的域名，就可以看到你的博客了。</p>
+<p>最后我分别ping了两个网站的服务器，可以看出访问coding上的博客相对访问github还是要快一些的<br><img src="https://img-blog.csdn.net/20170417154954460?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2t6ZDIwMTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+<hr>
+<p>原文链接：<a href="https://blog.csdn.net/wkzd2016/article/details/70213330" target="_blank" rel="noopener">https://blog.csdn.net/wkzd2016/article/details/70213330</a></p>
+]]></content>
       <categories>
         <category>Web前端</category>
       </categories>
