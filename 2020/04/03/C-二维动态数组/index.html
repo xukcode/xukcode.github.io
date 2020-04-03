@@ -6,7 +6,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    GitHub + Hexo搭建个人博客 |  A blog
+    C++二维动态数组 |  A blog
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -32,7 +32,7 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-GitHub-Hexo搭建个人博客" class="article article-type-post" itemscope
+  <article id="post-C-二维动态数组" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -40,7 +40,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  GitHub + Hexo搭建个人博客
+  C++二维动态数组
 </h1>
   
 
@@ -49,12 +49,12 @@
 
     
     <div class="article-meta">
-      <a href="/2020/03/08/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time datetime="2020-03-07T16:13:54.000Z" itemprop="datePublished">2020-03-08</time>
+      <a href="/2020/04/03/C-%E4%BA%8C%E7%BB%B4%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/" class="article-date">
+  <time datetime="2020-04-03T13:53:19.000Z" itemprop="datePublished">2020-04-03</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Web%E5%89%8D%E7%AB%AF/">Web前端</a>
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
   </div>
 
       
@@ -64,7 +64,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">982字</span>
+            <span class="post-count">214字</span>
         </span>
     </span>
 
@@ -73,7 +73,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">3分钟</span>
+            <span class="post-count">1分钟</span>
         </span>
     </span>
 </div>
@@ -100,48 +100,17 @@
       
 
       
-      <p>下面介绍如何利用GitHub + Hexo来搭建个人博客：</p>
-<p>*以下环境为：Windows 10 64bits操作系统</p>
+      <p>原文链接：<a href="https://www.cnblogs.com/renfanzi/p/9144734.html" target="_blank" rel="noopener">https://www.cnblogs.com/renfanzi/p/9144734.html</a></p>
 <hr>
-<h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><h4 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h4><p>Github 官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a><br>注册流程比较简单，这里就不再赘述了</p>
-<h4 id="安装git和node-js"><a href="#安装git和node-js" class="headerlink" title="安装git和node.js"></a>安装git和node.js</h4><p>git 官网下载地址：<a href="https://git-scm.com/download/" target="_blank" rel="noopener">https://git-scm.com/download/</a><br>git 安装可参考：<a href="https://www.jianshu.com/p/bebba0d8038e" target="_blank" rel="noopener">Git安装教程(详细)</a></p>
-<p>node.js 官网下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br>node.js 安装可参考：<a href="https://www.cnblogs.com/aizai846/p/11441693.html" target="_blank" rel="noopener">Node.js安装详细步骤教程(Windows版)</a></p>
-<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>首先需要新建一个文件夹，以后所写的博客都会被放在这个文件夹里，这里我就命名为 blog。如果是按照上面的教程安装的git，那么右键点击这个文件夹会有 <strong>Git Bash Here</strong> 这个选项，点击 <strong>Git Bash Here</strong> ，在弹出的 Git Bash 里输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>安装完成后可输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo -v</span><br></pre></td></tr></table></figure>
-<p>若显示以下内容（Hexo版本等信息），则表示安装成功。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo: 4.2.0</span><br><span class="line">hexo-cli: 3.1.0</span><br><span class="line">···</span><br></pre></td></tr></table></figure>
+<h4 id="已知动态数组的第一维"><a href="#已知动态数组的第一维" class="headerlink" title="已知动态数组的第一维"></a>已知动态数组的第一维</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">char* a[M];</span><br><span class="line">for (int i &#x3D; 0; i &lt; M; i++)</span><br><span class="line">	a[i] &#x3D; new char[n];</span><br><span class="line">for (int i &#x3D; 0; i &lt; M; i++)</span><br><span class="line">	delete[] a[i];</span><br></pre></td></tr></table></figure>
 
-<h3 id="Hexo-初始化及创建-GitHub-Page"><a href="#Hexo-初始化及创建-GitHub-Page" class="headerlink" title="Hexo 初始化及创建 GitHub Page"></a>Hexo 初始化及创建 GitHub Page</h3><h4 id="Hexo-初始化"><a href="#Hexo-初始化" class="headerlink" title="Hexo 初始化"></a>Hexo 初始化</h4><p>右键点击之前新建的文件夹（blog）选择 <strong>Git Bash Here</strong> ，输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>进行初始化，这时打开新建的文件夹，发现里面多了一些文件：<br>/themes 是与博客的主题有关的文件<br>/source/_posts 是你所写的博客，文件后缀都为<code>.md</code><br>/_config.yml 是博客的配置文件</p>
-<p>在初始化后，/source/_posts 目录下会有一篇名为 Hello World 的样例博客，还是按照上述方法在自己新建的文件夹中打开 Git Bash 输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>出现如下内容：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br><span class="line">INFO start processing</span><br><span class="line">INFO Hexo is running at http:&#x2F;&#x2F;localhost:4000 . press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<h4 id="已知动态数组的第二维"><a href="#已知动态数组的第二维" class="headerlink" title="已知动态数组的第二维"></a>已知动态数组的第二维</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">char(*a)[N];</span><br><span class="line">a &#x3D; new char[m][N];</span><br><span class="line">delete[] a;</span><br></pre></td></tr></table></figure>
 
-<p>打开 <u><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></u> 即可查看你的博客，在Git Bash里按 <kbd>Ctrl</kbd> + <kbd>C</kbd> 即可结束。这里看到的博客是在本地，要让其他人都能看到，需要将其部署在 GitHub Page 上，下面先介绍 GitHub 的创建。</p>
-<h4 id="创建-GitHub-Page"><a href="#创建-GitHub-Page" class="headerlink" title="创建 GitHub Page"></a>创建 GitHub Page</h4><p>登陆之前注册的GitHub账号，新建一个仓库(Repository)，仓库名(Repository name)以(假设用户名为user)<code>user.github.io</code>命名<br>这样得到的网址更短，方便记忆，当然如果后来要绑定域名（我没有绑定域名，这里就不具体介绍了）就无所谓了。</p>
-<p>勾选 <strong>Initialize this repository with a README</strong> ，然后点击  <strong>Create Repository</strong> 新建仓库。</p>
-<p>然后在你新建的仓库里点击 <strong>Settings</strong> ，下拉到 <strong>GitHub Pages</strong> ，你会看到你的网址，一般是 <code>https://user.github.io/</code>(user为你的用户名)</p>
-<p>用浏览器打开这个网址，里面的内容是仓库中<code>README.md</code>文件里的。</p>
-<h3 id="将博客部署到-GutHub-上"><a href="#将博客部署到-GutHub-上" class="headerlink" title="将博客部署到 GutHub 上"></a>将博客部署到 GutHub 上</h3><h4 id="获取-Github-对应的-Repository-的链接"><a href="#获取-Github-对应的-Repository-的链接" class="headerlink" title="获取 Github 对应的 Repository 的链接"></a>获取 Github 对应的 Repository 的链接</h4><p>这里有两种方式，一种是 https 协议，一种是使用SSH密钥，推荐使用后者。SSH的配置可参考:<a href="https://blog.csdn.net/u013778905/article/details/83501204" target="_blank" rel="noopener">GitHub如何配置SSH Key</a>。<br>git 使用 https 协议，每次 pull，push 都要输入密码，使用 git 协议，使用 ssh 秘钥，不用每次都输密码，安全性也更高。</p>
-<p>登陆 Github，进入到新建的仓库，点击 <strong>Clone or download</strong>，根据所选方式复制相应的 url。</p>
-<h4 id="修改博客的配置文件"><a href="#修改博客的配置文件" class="headerlink" title="修改博客的配置文件"></a>修改博客的配置文件</h4><p>打开博客的配置文件 <code>/你新建的文件夹/_config.yml</code></p>
-<p>找到 <strong>#Deployment</strong>，填入以下内容；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:  </span><br><span class="line">	  type: git  </span><br><span class="line">	  repository: 你复制的url  </span><br><span class="line">	  branch: master</span><br></pre></td></tr></table></figure>
-<h4 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h4><p>按照前面的操作打开 Git Bash，输入 ：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>安装 hexo-deployer-git<br>输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>得到 <code>INFO Deploy done: git</code>即为部署成功</p>
-<p>之前创建的仓库中的 <code>ReadMe.md</code> 会被博客的内容覆盖掉，打开你的网址<code>https://user.github.io/</code>(user为你的用户名)，即可看到之前你博客中的内容。</p>
-<p>参考资料：<br><a href="https://www.cnblogs.com/setcreed/p/11631794.html#%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A" target="_blank" rel="noopener">https://www.cnblogs.com/setcreed/p/11631794.html#%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A</a></p>
-<p><a href="https://ryanluoxu.github.io/2017/11/24/%E7%94%A8-Hexo-%E5%92%8C-GitHub-Pages-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">https://ryanluoxu.github.io/2017/11/24/%E7%94%A8-Hexo-%E5%92%8C-GitHub-Pages-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a></p>
-<p><a href="https://www.jianshu.com/p/7124c5fe0fa7#" target="_blank" rel="noopener">https://www.jianshu.com/p/7124c5fe0fa7#</a></p>
+<h4 id="两维都未知"><a href="#两维都未知" class="headerlink" title="两维都未知"></a>两维都未知</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">char** a;</span><br><span class="line">a &#x3D; new char* [m];</span><br><span class="line">for (int i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">	a[i] &#x3D; new char[n];</span><br><span class="line">for (int i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">	delete[] a[i];</span><br><span class="line">delete[] a;</span><br></pre></td></tr></table></figure>
 
+<h4 id="已知第一维，-一次分配内存（保证内存连续性）"><a href="#已知第一维，-一次分配内存（保证内存连续性）" class="headerlink" title="已知第一维， 一次分配内存（保证内存连续性）"></a>已知第一维， 一次分配内存（保证内存连续性）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">char* a[M];</span><br><span class="line">a[0] &#x3D; new char[M * n];</span><br><span class="line">for (int i &#x3D; 1; i &lt; M; i++)</span><br><span class="line">	a[i]a[i - 1] + n;</span><br><span class="line">delete[] a[0];</span><br></pre></td></tr></table></figure>
+
+<h4 id="两维都未知，-一次分配内存（保证内存的连续性）"><a href="#两维都未知，-一次分配内存（保证内存的连续性）" class="headerlink" title="两维都未知， 一次分配内存（保证内存的连续性）"></a>两维都未知， 一次分配内存（保证内存的连续性）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">har** a;</span><br><span class="line">a &#x3D; new char* [m];</span><br><span class="line">a[0] &#x3D; new char[m * n];</span><br><span class="line">for (int i &#x3D; 1; i &lt; m; i++)</span><br><span class="line">	a[i] &#x3D; a[i - 1] + n;</span><br><span class="line">delete[] a[0];</span><br><span class="line">delete[] a;</span><br></pre></td></tr></table></figure>
       
       <!-- reward -->
       
@@ -210,14 +179,14 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://pxzwuk.coding-pages.com/2020/03/08/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://pxzwuk.coding-pages.com/2020/04/03/C-%E4%BA%8C%E7%BB%B4%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
 
 
     </footer>
@@ -228,19 +197,10 @@
   
   <nav class="article-nav">
     
-      <a href="/2020/03/17/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            GitHub + Hexo搭建个人博客之主题美化
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/03/08/%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%EF%BC%8C%E5%AF%B9NN%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%B0%86%E5%85%B6%E6%AF%8F%E8%A1%8C%E5%85%83%E7%B4%A0%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC%E6%8C%89%E9%80%92%E5%A2%9E%E9%A1%BA%E5%BA%8F%E6%8E%92%E5%88%97/" class="article-nav-link">
+      <a href="/2020/03/20/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">GitHub + Hexo搭建个人博客</div>
+        <div class="article-nav-title">GitHub + Hexo搭建个人博客之速度优化</div>
       </a>
     
   </nav>

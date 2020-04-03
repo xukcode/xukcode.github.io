@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C++二维动态数组</title>
+    <url>/2020/04/03/C-%E4%BA%8C%E7%BB%B4%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<p>原文链接：<a href="https://www.cnblogs.com/renfanzi/p/9144734.html" target="_blank" rel="noopener">https://www.cnblogs.com/renfanzi/p/9144734.html</a></p>
+<hr>
+<h4 id="已知动态数组的第一维"><a href="#已知动态数组的第一维" class="headerlink" title="已知动态数组的第一维"></a>已知动态数组的第一维</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">char* a[M];</span><br><span class="line">for (int i &#x3D; 0; i &lt; M; i++)</span><br><span class="line">	a[i] &#x3D; new char[n];</span><br><span class="line">for (int i &#x3D; 0; i &lt; M; i++)</span><br><span class="line">	delete[] a[i];</span><br></pre></td></tr></table></figure>
+
+<h4 id="已知动态数组的第二维"><a href="#已知动态数组的第二维" class="headerlink" title="已知动态数组的第二维"></a>已知动态数组的第二维</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">char(*a)[N];</span><br><span class="line">a &#x3D; new char[m][N];</span><br><span class="line">delete[] a;</span><br></pre></td></tr></table></figure>
+
+<h4 id="两维都未知"><a href="#两维都未知" class="headerlink" title="两维都未知"></a>两维都未知</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">char** a;</span><br><span class="line">a &#x3D; new char* [m];</span><br><span class="line">for (int i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">	a[i] &#x3D; new char[n];</span><br><span class="line">for (int i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">	delete[] a[i];</span><br><span class="line">delete[] a;</span><br></pre></td></tr></table></figure>
+
+<h4 id="已知第一维，-一次分配内存（保证内存连续性）"><a href="#已知第一维，-一次分配内存（保证内存连续性）" class="headerlink" title="已知第一维， 一次分配内存（保证内存连续性）"></a>已知第一维， 一次分配内存（保证内存连续性）</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">char* a[M];</span><br><span class="line">a[0] &#x3D; new char[M * n];</span><br><span class="line">for (int i &#x3D; 1; i &lt; M; i++)</span><br><span class="line">	a[i]a[i - 1] + n;</span><br><span class="line">delete[] a[0];</span><br></pre></td></tr></table></figure>
+
+<h4 id="两维都未知，-一次分配内存（保证内存的连续性）"><a href="#两维都未知，-一次分配内存（保证内存的连续性）" class="headerlink" title="两维都未知， 一次分配内存（保证内存的连续性）"></a>两维都未知， 一次分配内存（保证内存的连续性）</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">har** a;</span><br><span class="line">a &#x3D; new char* [m];</span><br><span class="line">a[0] &#x3D; new char[m * n];</span><br><span class="line">for (int i &#x3D; 1; i &lt; m; i++)</span><br><span class="line">	a[i] &#x3D; a[i - 1] + n;</span><br><span class="line">delete[] a[0];</span><br><span class="line">delete[] a;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GitHub + Hexo搭建个人博客之速度优化</title>
     <url>/2020/03/20/GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[]]></content>
@@ -125,6 +146,18 @@
       <tags>
         <tag>Hexo</tag>
         <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub + Hexo搭建个人博客</title>
+    <url>/2020/03/08/%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%EF%BC%8C%E5%AF%B9NN%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%B0%86%E5%85%B6%E6%AF%8F%E8%A1%8C%E5%85%83%E7%B4%A0%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC%E6%8C%89%E9%80%92%E5%A2%9E%E9%A1%BA%E5%BA%8F%E6%8E%92%E5%88%97/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void Translation(float**&amp; matrix, int n) &#123;		&#x2F;&#x2F;本算法对n*n的矩阵matrix,通过行变换,使其各行元素的平均值按递增排列</span><br><span class="line">	int k;</span><br><span class="line">	float sum, min;								&#x2F;&#x2F;sun暂存各行元素之和</span><br><span class="line">	float* p&#x3D;new float[n], * pi, * pk;</span><br><span class="line">	for (int i &#x3D; 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		sum &#x3D; 0;</span><br><span class="line">		pk &#x3D; *matrix + i * n;					&#x2F;&#x2F;pk指向矩阵各行第1个元素</span><br><span class="line">		for (int j &#x3D; 0; j &lt; n; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			sum +&#x3D; *(pk);</span><br><span class="line">			pk++;</span><br><span class="line">		&#125;										&#x2F;&#x2F;求一行元素之和</span><br><span class="line">		p[i] &#x3D; sum;								&#x2F;&#x2F;将一行元素之和存入一维数组</span><br><span class="line">	&#125;</span><br><span class="line">	for (int i &#x3D; 0; i &lt; n-1; i++)   </span><br><span class="line">	&#123;</span><br><span class="line">		min &#x3D; p[i]; k &#x3D; i;						&#x2F;&#x2F;初始设第i行元素之和最小. </span><br><span class="line">		for (int j &#x3D; i + 1; j &lt; n; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			if (p[j] &lt; min)</span><br><span class="line">			&#123;</span><br><span class="line">				k &#x3D; j;</span><br><span class="line">				min &#x3D; p[j];</span><br><span class="line">			&#125;									&#x2F;&#x2F;记新的最小值及行号. </span><br><span class="line">			if (i !&#x3D; k)							&#x2F;&#x2F;若最小行不是当前行,要进行交换(行元素及行元素之和)  </span><br><span class="line">			&#123;</span><br><span class="line">				pk &#x3D; &amp;*matrix[k];				&#x2F;&#x2F;pk指向第k行第1个元素.   </span><br><span class="line">				pi &#x3D; &amp;*matrix[i];				&#x2F;&#x2F;pi指向第i行第1个元素.   </span><br><span class="line">				for (int j &#x3D; 0; j &lt; n; j++)		&#x2F;&#x2F;交换两行中对应元素.     </span><br><span class="line">				&#123;</span><br><span class="line">					sum &#x3D; pk[j];</span><br><span class="line">					pk[j] &#x3D; pi[j];</span><br><span class="line">					pi[j] &#x3D; sum;</span><br><span class="line">				&#125;</span><br><span class="line">				sum &#x3D; p[i];</span><br><span class="line">				p[i] &#x3D; p[k];</span><br><span class="line">				p[k] &#x3D; sum;						&#x2F;&#x2F;交换一维数组中元素之和</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int N;</span><br><span class="line">	cin &gt;&gt; N;</span><br><span class="line">	float** matrix;</span><br><span class="line">	matrix &#x3D; new float* [N];</span><br><span class="line">	for (int i &#x3D; 0; i &lt; N; i++)</span><br><span class="line">		matrix[i] &#x3D; new float[N];				&#x2F;&#x2F;N*N矩阵</span><br><span class="line">	for (int i &#x3D; 0; i &lt; N; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for (int j &#x3D; 0; j &lt; N; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			float m;</span><br><span class="line">			cin &gt;&gt; m;</span><br><span class="line">			matrix[i][j] &#x3D; m;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;											&#x2F;&#x2F;给N*N矩阵赋值</span><br><span class="line">	Translation(matrix, N);						&#x2F;&#x2F;将每行元素的平均值按递增顺序排列</span><br><span class="line">	cout &lt;&lt; endl;</span><br><span class="line">	for (int i &#x3D; 0; i &lt; N; i++)	</span><br><span class="line">	&#123;</span><br><span class="line">		for (int j &#x3D; 0; j &lt; N; j++)</span><br><span class="line">			cout &lt;&lt; matrix[i][j] &lt;&lt; &quot; &quot;;</span><br><span class="line">		cout &lt;&lt; endl;	</span><br><span class="line">	&#125;											&#x2F;&#x2F;输出排序后的矩阵</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>题目</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>算法与数据结构</tag>
       </tags>
   </entry>
 </search>
