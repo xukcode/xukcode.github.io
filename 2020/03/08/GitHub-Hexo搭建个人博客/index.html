@@ -131,7 +131,7 @@
 <p>登陆 Github，进入到新建的仓库，点击 <strong>Clone or download</strong>，根据所选方式复制相应的 url。</p>
 <h4 id="修改博客的配置文件"><a href="#修改博客的配置文件" class="headerlink" title="修改博客的配置文件"></a>修改博客的配置文件</h4><p>打开博客的配置文件 <code>/你新建的文件夹/_config.yml</code></p>
 <p>找到 <strong>#Deployment</strong>，填入以下内容；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:  </span><br><span class="line">	  type: git  </span><br><span class="line">	  repository: 你复制的url  </span><br><span class="line">	  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span>  </span><br><span class="line">	  <span class="attr">type:</span> <span class="string">git</span>  </span><br><span class="line">	  <span class="attr">repository:</span> <span class="string">你复制的url</span>  </span><br><span class="line">	  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 <h4 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h4><p>按照前面的操作打开 Git Bash，输入 ：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>安装 hexo-deployer-git<br>输入：</p>
