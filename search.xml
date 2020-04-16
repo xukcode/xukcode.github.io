@@ -8,17 +8,17 @@
 </blockquote>
 <p>海明码可以检出两位及以下的错误，纠正一位错误<br>海明码默认进行偶校验</p>
 <p><strong>要求一串二进制代码的海明码有以下步骤：</strong></p>
-<h4 id="确定校验位的个数"><a href="#确定校验位的个数" class="headerlink" title="确定校验位的个数"></a>确定校验位的个数</h4><p>如果这串二进制代码长度为 <strong>k</strong>，设校验位个数为 <strong>r</strong>，则 <strong>r</strong> 要满足的条件为：<br><strong><center>k + r &lt;= 2^r -1</center></strong><br>k + r 即为海明码的长度，海明码 = 信息码 + 校验码</p>
+<h3 id="确定校验位的个数"><a href="#确定校验位的个数" class="headerlink" title="确定校验位的个数"></a>确定校验位的个数</h3><p>如果这串二进制代码长度为 <strong>k</strong>，设校验位个数为 <strong>r</strong>，则 <strong>r</strong> 要满足的条件为：<br><strong><center>k + r &lt;= 2^r -1</center></strong><br>k + r 即为海明码的长度，海明码 = 信息码 + 校验码</p>
 <blockquote>
 <p>例如，一串4位二进制代码需要3位校验码</p>
 </blockquote>
-<h4 id="确定校验位的位置"><a href="#确定校验位的位置" class="headerlink" title="确定校验位的位置"></a>确定校验位的位置</h4><p>检验位在海明码的1，2，4，8，16，32，······这样的位置上，即<strong>2^n</strong>(n=0,1,2,3,4···)<br>信息位则在剩余的其他位置上</p>
+<h3 id="确定校验位的位置"><a href="#确定校验位的位置" class="headerlink" title="确定校验位的位置"></a>确定校验位的位置</h3><p>检验位在海明码的1，2，4，8，16，32，······这样的位置上，即<strong>2^n</strong>(n=0,1,2,3,4···)<br>信息位则在剩余的其他位置上</p>
 <blockquote>
 <p>例如,4位信息码为H1,H2,H3,H4，3位校验码为P1,P2,P3，则海明码为<strong>P1</strong> <strong>P2</strong> H1 <strong>P3</strong> H2 H3 H4</p>
 </blockquote>
-<h4 id="计算校验位"><a href="#计算校验位" class="headerlink" title="计算校验位"></a>计算校验位</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">H3 &#x3D; H1 + H2</span><br><span class="line">H5 &#x3D; H1 + H4</span><br><span class="line">H6 &#x3D; H2 + H4</span><br><span class="line">H7 &#x3D; H1 + H2 + H4</span><br><span class="line">······</span><br><span class="line"></span><br><span class="line">(P1)H1 &#x3D; H3 ⊕ H5 ⊕ H7 ⊕ ···（H3,H5,H7后面有H1）</span><br><span class="line">同理：</span><br><span class="line">(P2)H2 &#x3D; H3 ⊕ H6 ⊕ H7 ⊕ ···</span><br><span class="line">(P3)H4 &#x3D; H5 ⊕ H6 ⊕ H7 ⊕ ···</span><br></pre></td></tr></table></figure>
+<h3 id="计算校验位"><a href="#计算校验位" class="headerlink" title="计算校验位"></a>计算校验位</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">H3 &#x3D; H1 + H2</span><br><span class="line">H5 &#x3D; H1 + H4</span><br><span class="line">H6 &#x3D; H2 + H4</span><br><span class="line">H7 &#x3D; H1 + H2 + H4</span><br><span class="line">······</span><br><span class="line"></span><br><span class="line">(P1)H1 &#x3D; H3 ⊕ H5 ⊕ H7 ⊕ ···（H3,H5,H7后面有H1）</span><br><span class="line">同理：</span><br><span class="line">(P2)H2 &#x3D; H3 ⊕ H6 ⊕ H7 ⊕ ···</span><br><span class="line">(P3)H4 &#x3D; H5 ⊕ H6 ⊕ H7 ⊕ ···</span><br></pre></td></tr></table></figure>
 <p>即(P1)H1负责H3、H5、H7 ···的校验<br>(P2)H2负责H3、H5、H7 ···的校验<br>(P3)H4负责H3、H5、H7 ···的校验<br>······</p>
-<h4 id="海明码的检错与纠错"><a href="#海明码的检错与纠错" class="headerlink" title="海明码的检错与纠错"></a>海明码的检错与纠错</h4><p>检错就是对每一组都进行偶校验，即如果<br>H1,H3,H5,H7,···<br>或者<br>H2,H3,H6,H7,···<br>或者<br>H4,H5,H6,H7,···<br>······<br>偶校验出错，则出错</p>
+<h3 id="海明码的检错与纠错"><a href="#海明码的检错与纠错" class="headerlink" title="海明码的检错与纠错"></a>海明码的检错与纠错</h3><p>检错就是对每一组都进行偶校验，即如果<br>H1,H3,H5,H7,···<br>或者<br>H2,H3,H6,H7,···<br>或者<br>H4,H5,H6,H7,···<br>······<br>偶校验出错，则出错</p>
 <p>纠错可以对比所有分组的偶校验结果来分析出错的具体位置，如果这个位置为0则改为1，为1则改为0</p>
 <blockquote>
 <p>纠错的前提是只错了一位数</p>
