@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pxzwuk.coding-pages.com/"/>
-  <updated>2020-04-04T13:43:47.183Z</updated>
+  <updated>2020-04-16T11:43:09.257Z</updated>
   <id>http://pxzwuk.coding-pages.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>海明码</title>
+    <link href="http://pxzwuk.coding-pages.com/2020/04/16/%E6%B5%B7%E6%98%8E%E7%A0%81/"/>
+    <id>http://pxzwuk.coding-pages.com/2020/04/16/%E6%B5%B7%E6%98%8E%E7%A0%81/</id>
+    <published>2020-04-16T09:32:09.000Z</published>
+    <updated>2020-04-16T11:43:09.257Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;在海明码之前先了解一下奇偶校验&lt;br&gt;&amp;emsp;&amp;emsp;为了校验编码的正确性，在被传送的n位代码上增加一位检验位，并使其配置后的n +
+        
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://pxzwuk.coding-pages.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="计算机组成原理" scheme="http://pxzwuk.coding-pages.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>编写一个算法，对N*N矩阵，将其每行元素的平均值按递增顺序排列</title>
