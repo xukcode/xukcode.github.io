@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>JavaScript学习笔记</title>
+    <title>JavaScript学习笔记-Web APIs</title>
     <url>/2022/01/15/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="01-Web-APIs"><a href="#01-Web-APIs" class="headerlink" title="01 Web APIs"></a>01 Web APIs</h1><h2 id="1-Web-APIs和JS基础关联性"><a href="#1-Web-APIs和JS基础关联性" class="headerlink" title="1 Web APIs和JS基础关联性"></a>1 Web APIs和JS基础关联性</h2><h3 id="1-1-JS的组成"><a href="#1-1-JS的组成" class="headerlink" title="1.1 JS的组成"></a>1.1 JS的组成</h3><p><img src="https://s4.ax1x.com/2022/01/15/7Yroy6.png" alt=""></p>
 <h3 id="1-2-JS基础阶段以及Web-APIs阶段"><a href="#1-2-JS基础阶段以及Web-APIs阶段" class="headerlink" title="1.2 JS基础阶段以及Web APIs阶段"></a>1.2 JS基础阶段以及Web APIs阶段</h3><p><strong>JS基础阶段：</strong>学习的是ECMAScript标准规定的基本语法，做不了常用的页面交互效果。</p>
@@ -13,7 +13,32 @@
 <h3 id="2-3-API和Web-API总结"><a href="#2-3-API和Web-API总结" class="headerlink" title="2.3 API和Web API总结"></a>2.3 API和Web API总结</h3><p><img src="https://s2.loli.net/2022/01/16/1zh4TrsO7clYjty.png" alt="image-20220116000849596"></p>
 <h1 id="02-DOM"><a href="#02-DOM" class="headerlink" title="02 DOM"></a>02 DOM</h1><h2 id="1-DOM简介"><a href="#1-DOM简介" class="headerlink" title="1 DOM简介"></a>1 DOM简介</h2><h3 id="1-1-什么是DOM"><a href="#1-1-什么是DOM" class="headerlink" title="1.1 什么是DOM"></a>1.1 什么是DOM</h3><p><img src="https://s2.loli.net/2022/01/16/rznWGhStAV4g13U.png" alt="image-20220116001343098"></p>
 <h3 id="1-2-DOM树"><a href="#1-2-DOM树" class="headerlink" title="1.2 DOM树"></a>1.2 DOM树</h3><p><img src="https://s2.loli.net/2022/01/16/K98lGhZ74oaOixz.png" alt="image-20220116002304620"></p>
-<h2 id="2-获取元素"><a href="#2-获取元素" class="headerlink" title="2 获取元素"></a>2 获取元素</h2><h2 id="3-事件基础"><a href="#3-事件基础" class="headerlink" title="3 事件基础"></a>3 事件基础</h2><h2 id="4-操作元素"><a href="#4-操作元素" class="headerlink" title="4 操作元素"></a>4 操作元素</h2><h2 id="5-节点操作"><a href="#5-节点操作" class="headerlink" title="5 节点操作"></a>5 节点操作</h2>]]></content>
+<h2 id="2-获取元素"><a href="#2-获取元素" class="headerlink" title="2 获取元素"></a>2 获取元素</h2><h3 id="2-1-如何获取页面元素"><a href="#2-1-如何获取页面元素" class="headerlink" title="2.1 如何获取页面元素"></a>2.1 如何获取页面元素</h3><p><img src="https://s2.loli.net/2022/02/26/zWqPHvI3rJ8g1G7.png" alt="image-20220226230035676"></p>
+<h3 id="2-2-根据ID获取"><a href="#2-2-根据ID获取" class="headerlink" title="2.2 根据ID获取"></a>2.2 根据ID获取</h3><p>使用getElementById()方法可以获取带有ID的元素对象。</p>
+<h2 id="3-事件基础"><a href="#3-事件基础" class="headerlink" title="3 事件基础"></a>3 事件基础</h2><h2 id="4-操作元素"><a href="#4-操作元素" class="headerlink" title="4 操作元素"></a>4 操作元素</h2><h2 id="5-节点操作"><a href="#5-节点操作" class="headerlink" title="5 节点操作"></a>5 节点操作</h2>]]></content>
+      <categories>
+        <category>Web前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript学习笔记-Web APIs</title>
+    <url>/2022/01/15/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Web%20APIs/</url>
+    <content><![CDATA[<h1 id="01-Web-APIs"><a href="#01-Web-APIs" class="headerlink" title="01 Web APIs"></a>01 Web APIs</h1><h2 id="1-Web-APIs和JS基础关联性"><a href="#1-Web-APIs和JS基础关联性" class="headerlink" title="1 Web APIs和JS基础关联性"></a>1 Web APIs和JS基础关联性</h2><h3 id="1-1-JS的组成"><a href="#1-1-JS的组成" class="headerlink" title="1.1 JS的组成"></a>1.1 JS的组成</h3><p><img src="https://s4.ax1x.com/2022/01/15/7Yroy6.png" alt=""></p>
+<h3 id="1-2-JS基础阶段以及Web-APIs阶段"><a href="#1-2-JS基础阶段以及Web-APIs阶段" class="headerlink" title="1.2 JS基础阶段以及Web APIs阶段"></a>1.2 JS基础阶段以及Web APIs阶段</h3><p><strong>JS基础阶段：</strong>学习的是ECMAScript标准规定的基本语法，做不了常用的页面交互效果。</p>
+<p><strong>Web APIs阶段：</strong>Web APIs是W3C组织的标准，主要学习DOM和BOM，Web APIs是JS所独有的部分，主要学习页面交互功能。</p>
+<p><u>JS基础学习ECMAScript基础语法为后面做铺垫，Web APIs是JS的应用，大量使用JS基础语法做交互效果。</u></p>
+<h2 id="2-API和Web-API"><a href="#2-API和Web-API" class="headerlink" title="2 API和Web API"></a>2 API和Web API</h2><h3 id="2-1-API"><a href="#2-1-API" class="headerlink" title="2.1 API"></a>2.1 API</h3><p><img src="https://s2.loli.net/2022/01/15/lJkAe9EqWnbVaBI.png" alt="image-20220115235935620"></p>
+<h3 id="2-2-Web-API"><a href="#2-2-Web-API" class="headerlink" title="2.2 Web API"></a>2.2 Web API</h3><p><img src="https://s2.loli.net/2022/01/16/4sd2aOPkpTy3FY1.png" alt="image-20220116000339874"> </p>
+<p>MDN详细API：<a href="https://developer.mozilla.org/zh-CN/docs/Web/API" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/API</a></p>
+<h3 id="2-3-API和Web-API总结"><a href="#2-3-API和Web-API总结" class="headerlink" title="2.3 API和Web API总结"></a>2.3 API和Web API总结</h3><p><img src="https://s2.loli.net/2022/01/16/1zh4TrsO7clYjty.png" alt="image-20220116000849596"></p>
+<h1 id="02-DOM"><a href="#02-DOM" class="headerlink" title="02 DOM"></a>02 DOM</h1><h2 id="1-DOM简介"><a href="#1-DOM简介" class="headerlink" title="1 DOM简介"></a>1 DOM简介</h2><h3 id="1-1-什么是DOM"><a href="#1-1-什么是DOM" class="headerlink" title="1.1 什么是DOM"></a>1.1 什么是DOM</h3><p><img src="https://s2.loli.net/2022/01/16/rznWGhStAV4g13U.png" alt="image-20220116001343098"></p>
+<h3 id="1-2-DOM树"><a href="#1-2-DOM树" class="headerlink" title="1.2 DOM树"></a>1.2 DOM树</h3><p><img src="https://s2.loli.net/2022/01/16/K98lGhZ74oaOixz.png" alt="image-20220116002304620"></p>
+<h2 id="2-获取元素"><a href="#2-获取元素" class="headerlink" title="2 获取元素"></a>2 获取元素</h2><h3 id="2-1-如何获取页面元素"><a href="#2-1-如何获取页面元素" class="headerlink" title="2.1 如何获取页面元素"></a>2.1 如何获取页面元素</h3><p><img src="https://s2.loli.net/2022/02/26/zWqPHvI3rJ8g1G7.png" alt="image-20220226230035676"></p>
+<h3 id="2-2-根据ID获取"><a href="#2-2-根据ID获取" class="headerlink" title="2.2 根据ID获取"></a>2.2 根据ID获取</h3><p>使用getElementById()方法可以获取带有ID的元素对象。</p>
+<h2 id="3-事件基础"><a href="#3-事件基础" class="headerlink" title="3 事件基础"></a>3 事件基础</h2><h2 id="4-操作元素"><a href="#4-操作元素" class="headerlink" title="4 操作元素"></a>4 操作元素</h2><h2 id="5-节点操作"><a href="#5-节点操作" class="headerlink" title="5 节点操作"></a>5 节点操作</h2>]]></content>
       <categories>
         <category>Web前端</category>
       </categories>
